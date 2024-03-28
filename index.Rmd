@@ -105,20 +105,12 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 ---
 class:inverse
 
-.pull-left[
-### Le livre
+
+### La massifcation des usages de l'open data
 <br/>
 <br/>
 
-<span style="font-size:1.2em">A commander ici : https://cfeditions.com/donnees-ouvertes/ </span>
-]
-
-.pull-right[
-
-![](img/flyer-precommande.png)
-
-]
-
+![](img/usages.001.png)
 
 ---
 ### Les données ouvertes : une question de .red[démocratie]
