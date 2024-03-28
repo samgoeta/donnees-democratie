@@ -20,9 +20,9 @@ output:
     anchor_sections: false
     seal: false
 params:
-  event: journée d'étude ADEMEC
-  slug: ademec
-  description: Présentation du livre Les Données de la démocratie aux journées ADEMEC
+  event: Les données de la démocratie
+  slug: donnees-democratie
+  description: Présentation du livre Les Données de la démocratie
   title: les données de la démocratie, un bilan critique de l'open data
   image: https://cfeditions.com/donnees-democratie/ressources/couv_donnees-democratie_grand.jpg
   image_alt: le logo de Datactivist
