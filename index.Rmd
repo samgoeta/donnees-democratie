@@ -1,0 +1,298 @@
+---
+title: "Les données de la démocratie"
+subtitle: "Un bilan critique des politiques d'open data"
+author: "Samuel Goëta, Datactivist/Sciences Po Aix"
+date: "Journée d'étude ADEMEC, 11 décembre 2023`"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    anchor_sections: false
+    seal: false
+params:
+  event: journée d'étude ADEMEC
+  slug: ademec
+  description: Présentation du livre Les Données de la démocratie aux journées ADEMEC
+  title: les données de la démocratie, un bilan critique de l'open data
+  image: https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/logo.png
+  image_alt: le logo de Datactivist
+---
+
+```{r, echo=FALSE}
+library(metathis)
+meta() %>% 
+  meta_description(params$event) %>% 
+  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = params$title,
+    url = paste0("https://datactivist.coop/", params$slug),
+    image = params$image,
+    image_alt = params$image_alt,
+    og_type = "website",
+    og_author = "Datactivist",
+    og_locale = "fr_FR",
+    og_site_name = "Datactivist",
+    twitter_card_type = "summary",
+    twitter_creator = "@datactivi_st")
+
+```
+
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+
+
+`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><a href='https://datactivist.coop/'><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'></a></div></center></span></div>")` 
+
+
+---
+class: inverse, center, middle
+background-image: url(./img/ademec.png)
+
+
+## Les données de la démocratie
+### Un bilan critique de l'open data
+
+### Samuel Goëta
+### Datactivist et Sciences Po Aix
+
+---
+class: center, middle, inverse
+
+Ces slides en ligne : `r paste0("http://datactivist.coop/", params$slug)`
+
+Sources : `r paste0("https://github.com/datactivist/", params$slug)`
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+<BR>
+<BR>
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+
+---
+class:inverse
+
+.pull-left[
+### Un livre à paraître .red[bientôt]
+<br/>
+<br/>
+
+<span style="font-size:1.2em">En précommande : https://cfeditions.com/donnees-ouvertes/ </span>
+]
+
+.pull-right[
+
+![](img/flyer-precommande.png)
+
+]
+
+
+---
+### Les données ouvertes : une question de .red[démocratie]
+
+.red[Comment faire pour mettre les données ouvertes au service des citoyens  et de la démocratie ? L’open data est-il vraiment un contre-pouvoir ?]
+
+.pull-left[
+
+
+Open data : accès à la matière première de l’information et du savoir. Refaire les calculs et proposer de nouvelles interprétations.  
+
+—> Un outil de la « contre-démocratie » : enrichit la démocratie, la conforte et fait système avec les institutions démocratiques
+
+—> Un outil d’empowerment et d’émancipation
+]
+
+.pull-right.center[
+
+<img src="img/couv_donnees-ouvertes_grand.jpg" width="70%" height="auto"/>
+]
+
+---
+.pull-left[
+.red[**Chapitre 1**]
+<h3 style="margin-top:0px;margin-bottom:0px"> Les racines multiples de l'open data </h3>
+Loin d'être un phénomène récent, un héritage historique et conceptuel varié :
+![](img/magic-cube-cube-puzzle-play-54101-removebg-preview.png)]
+--
+.pull-right[
+.red[**Chapitre 2**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> Vers une .red[troisième vague] de l'open data ? </h3>
+
+.reduite[![](img/third-wave.png)]
+]
+
+---
+.pull-left[
+.red[**Chapitre 3**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> L’ancrage .red[instable] de l’ouverture des données dans l’administration </h3>
+Des premières initiatives locales à la mise en œuvre de la loi pour une République numérique
+
+.center[![](img/lemaire.png)]
+]
+--
+.pull-right[
+.red[**Chapitre 4**]
+<h3 style="margin-top:0px;margin-bottom:0px"> La pandémie de Covid-19, un .red[moment charnière] </h3>
+
+![](img/hackathoncovid.png)
+]
+
+---
+.red[**Chapitre 5**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> Un renouvellement de la transparence .red[en demi-teinte] </h3>
+
+.pull-left[
+Les fondements juridiques instables de la transparence administrative
+
+L’open data : un carburant pour les « machines à scandale » ?
+
+Des données « inoffensives » ?
+
+Faut-il produire ses propres données ?
+]
+
+.pull-right[
+
+![](img/courdescomptes2.png)
+
+]
+---
+.red[**Chapitre 5**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> Un renouvellement de la transparence .red[en demi-teinte] </h3>
+
+.pull-left[
+Les fondements juridiques instables de la transparence administrative
+
+L’open data : un carburant pour les « machines à scandale » ?
+
+Des données « inoffensives » ?
+
+Faut-il produire ses propres données ?
+]
+
+.pull-right[
+![](img/courdescomptes2.png)
+
+.footnote[illustration : etalab] 
+]
+
+---
+.red[**Chapitre 6**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> Des promesses démesurées de .red[croissance et d’innovation] </h3>
+
+.pull-left[
+Le « nouveau pétrole » : des conjectures de croissance et d’emploi disproportionnées
+
+Un impact en deçà des attentes sur la création d’emploi
+
+Des données souvent introuvables et mal documentées
+
+Des données pas encore assez fiables pour créer des services pérennes
+]
+
+.pull-right[
+
+![](img/preische.png)
+]
+
+---
+.red[**Chapitre 7**]
+
+<h3 style="margin-top:0px"> Une transformation des administrations .red[en cours] </h3>
+
+
+.pull-left[
+Le mirage de l’ouverture des données par défaut
+
+Les nombreux obstacles à surmonter dans l’ouverture des données
+
+Les bénéfices inattendus de l’ouverture des données pour le fonctionnement des administrations
+
+]
+
+.pull-right[
+![](img/odimpact.png)
+
+.footnote[illustration : [GovLab - Open Data Impact](https://odimpact.org/)]
+]
+
+---
+.pull-left[
+.red[**Chapitre 8**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> Cinq stratégies alternatives pour .red[obtenir des données] </h3>
+.red[1. ]Recourir au droit d’accès
+
+.red[2. ]Scraper les données sur le web
+
+.red[3. ]Rassembler des données à partir des informations disponibles
+
+.red[4. ]Faire appel à une foule de contributeurs
+
+.red[5. ]Concevoir des communs de données 
+]
+--
+.pull-right[
+.red[**Chapitre 9**]
+<h3 style="margin-top:0px;margin-bottom:0px"> Chantiers et .red[pistes d’action] </h3>
+
+.red[1. ]Obtenir les données qui manquent
+
+.red[2. ]Améliorer la qualité et la fiabilité
+
+.red[3. ]Développer la culture des données
+
+![](img/dataliteracy-removebg.png)
+.footnote[
+[Venngage](https://venngage.com/blog/data-literacy/)
+]
+
+]
+
+
+
+---
+class:inverse,middle,center
+# Merci !
+
+Contact : [samuel@datactivist.coop](mailto:samuel@datactivist.coop)
+
+
