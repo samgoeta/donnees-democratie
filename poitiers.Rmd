@@ -111,14 +111,17 @@ class:inverse
 ### La massifcation des usages de l'open data
 
 .pull-left[
+
 ![](img/meilleursagents.png)
-![](img/yuka.png)]
+![](img/yuka.png)
+
+]
 
 .pull-right[
 ![](img/pokemon.png)
 ![](img/plantnet.png)
 ]
-]
+
 
 ---
 ### Les données ouvertes : une question de .red[démocratie]
@@ -323,7 +326,7 @@ class:inverse
 
 ### Un exemple d'usage dans le Grand Poitiers
 
-![](img/poitiers.png))
+![](img/poitiers.png)
 
 ---
 
@@ -347,6 +350,7 @@ class:inverse
 
 ![](img/cimade.jpeg)
 Un exemple : la Cimade avec [À guichets fermés](https://aguichetsfermes.lacimade.org/)
+
 ]
 
 ---
@@ -371,11 +375,25 @@ Un exemple : la Cimade avec [À guichets fermés](https://aguichetsfermes.lacima
 ]
 
 ---
-class:inverse, middle,center
+class:inverse
 
 ### .red[Conclusion] : approfondir et étendre la démocratie
 
+.pull-left[
+- Un écosystème fragile
+
+- Approfondir la démocratie : d'un droit à un devoir de rendre des comptes
+
+- Étendre la démocratie : ouvrir la gouvernance des données, étendre l'ouverture aux algorithmes
+
+
+]
+
+--
+.pull-right[
 ![](img/conclusion.png)
+"Changer les données" : des données pour transformer la réalité
+]
 ---
 class:inverse,middle,center
 # Merci !
