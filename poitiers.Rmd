@@ -409,6 +409,7 @@ class:inverse, middle, center
 ![](img/odviz.png)
 ]
 
+---
 class:inverse,middle,center
 # Merci !
 
