@@ -105,6 +105,12 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 
 
 ---
+class:inverse, middle
+
+### Participez sur Wooclap
+
+![](img/wooclap.png)
+---
 class:inverse
 
 
