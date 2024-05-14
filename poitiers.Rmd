@@ -108,7 +108,7 @@ Les productions de Datactivist sont librement réutilisables selon les termes de
 class:inverse
 
 
-### La massifcation des usages de l'open data
+### La massification des usages de l'open data
 
 .pull-left[
 
@@ -395,6 +395,20 @@ class:inverse
 "Changer les données" : des données pour transformer la réalité
 ]
 ---
+class:inverse, middle, center
+
+### Découvrez le portail de données ouvertes Grand Poitiers
+### .red[https://data.grandpoitiers.fr/]
+
+
+.pull-left[
+![](img/od-grandpoitiers.png)
+]
+
+.pull-right[
+![](img/odviz.png)
+]
+
 class:inverse,middle,center
 # Merci !
 
