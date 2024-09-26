@@ -1,0 +1,460 @@
+---
+title: "Les données de la démocratie"
+subtitle: "Open data, pouvoirs et contre-pouvoirs"
+author: "Samuel Goëta, Datactivist/Sciences Po Aix"
+date: "14 mai 2024"
+output:
+  SlidesDatactivist::moon_reader:
+    css: [default, datactivist, datactivist-fonts]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: ["macros.js", "matomo.js", "https://platform.twitter.com/widgets.js"]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+    anchor_sections: false
+    seal: false
+params:
+  event: Les donnees de la démocratie
+  slug: donnees-democratie
+  description: NEC
+  image: https://cfeditions.com/donnees-democratie/ressources/couv_donnees-democratie_grand.jpg
+  image_alt: le logo de Datactivist
+---
+
+```{r, echo=FALSE}
+library(metathis)
+meta() %>% 
+  meta_description(params$event) %>% 
+  meta_name("github-repo" = paste0("datactivist/", params$slug)) %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = params$title,
+    url = paste0("https://datactivist.coop/", params$slug),
+    image = params$image,
+    image_alt = params$image_alt,
+    og_type = "website",
+    og_author = "Datactivist",
+    og_locale = "fr_FR",
+    og_site_name = "Datactivist",
+    twitter_card_type = "summary",
+    twitter_creator = "@datactivi_st")
+
+```
+
+layout: true
+
+<style>
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+</style>
+
+
+
+---
+class: inverse, center, middle
+background-image: url(https://cfeditions.com/donnees-democratie/ressources/couv_donnees-democratie_grand.jpg)
+
+
+## Les données de la démocratie
+### Un bilan critique de l'open data
+
+### Samuel Goëta
+
+#### NEC, 25 septembre 2024
+
+
+---
+class:inverse
+
+
+### La massifcation des usages de l'open data
+
+.pull-left[
+
+![](img/meilleursagents.png)
+![](img/yuka.png)
+
+]
+
+.pull-right[
+![](img/pokemon.png)
+![](img/plantnet.png)
+]
+
+
+---
+### Les données ouvertes : une question de .red[démocratie]
+
+.red[Comment faire pour mettre les données ouvertes au service des citoyens  et de la démocratie ? L’open data est-il vraiment un contre-pouvoir ?]
+
+.pull-left[
+
+
+Open data : accès à la matière première de l’information et du savoir. Refaire les calculs et proposer de nouvelles interprétations.  
+
+—> Un outil de la « contre-démocratie » : enrichit la démocratie, la conforte et fait système avec les institutions démocratiques
+
+—> Un outil d’empowerment et d’émancipation
+]
+
+.pull-right.center[
+
+<img src="img/couv_donnees-ouvertes_grand.jpg" width="70%" height="auto"/>
+]
+
+---
+### Les racines multiples de l'open data
+
+.pull-left[
+
+![](img/magic-cube-cube-puzzle-play-54101-removebg-preview.png)
+]
+
+.pull-right[
+Loin d'être un phénomène récent, un mouvement aux multiples facettes :
+- la transparence et le droit d'accès
+- la liberté de l'information et le logiciel libre
+- le partage des données de la recherche
+- la modernisation des administrations
+- les industries de l'information
+- l'entrainement des modèles d'IA
+
+]
+---
+### Les grandes étapes de la définition des principes de l'open data
+
+.pull-left[
+Quelques jalons : 
+- l'Open Definition
+
+- la rencontre de Sebastopol
+
+- la Charte internationale de l'open data
+
+**Vers une .red[troisième vague] de l'open data ?**
+
+]
+
+.pull-right[
+
+
+.reduite[![](img/third-wave.png)]
+]
+
+---
+### L’ancrage .red[instable] de l’ouverture des données dans l’administration
+.pull-left[
+- Les premières initiatives locales : Rennes, PACA, Nantes, Paris… 
+
+- La création d'Etalab et le lancement de data.gouv.fr
+
+- La loi pour une République numérique
+
+- Vers une administration des données ?
+
+]
+
+.pull-right[
+![](img/republique-numerique.jpeg)
+]
+
+---
+### La pandémie de Covid-19, un .red[moment charnière]
+
+.pull-left[
+
+![](img/hackathoncovid.png)
+]
+
+.pull-right[
+- De premières ouvertures de données incitées par des initiatives citoyennes
+
+- Des données réutilisées massivement, une relance de la politique d'ouverture des données
+
+- L'émergence des médiateurs de données
+]
+
+---
+
+### Un renouvellement de la transparence .red[en demi-teinte]
+
+.pull-left[
+Les fondements juridiques instables de la transparence administrative
+
+L’open data : un carburant pour les « machines à scandale » ?
+
+Des données « inoffensives » ?
+
+Faut-il produire ses propres données ?
+]
+
+.pull-right[
+
+![](img/courdescomptes2.png)
+
+]
+---
+class:inverse
+### Un exemple : les Indices de Position Sociale des établissements scolaires
+
+.pull-left.center[
+![](img/lechenet.png)
+]
+
+.pull-right[![](img/lemonde-ips.png)]
+---
+class:inverse
+### Autre exemple : les notes de frais des maires
+
+.pull-left.center[
+![](img/joissains.png)
+]
+
+.pull-right[![](img/chicane.png)
+Lire à ce sujet : [chicane-lemag.fr/16](https://chicane-lemag.fr/16)
+]
+]
+---
+class:inverse,middle,center
+
+# Qu'est ce qu'on fait ? 
+# .red[Alternatives et propositions]
+
+---
+.red[**Qu'est ce qu'on fait ?**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On se retrousse les manches pour  .red[obtenir des données] </h3>
+
+
+.pull-left[
+**5 stratégies alternatives :**
+`
+.red[1. ]Recourir au droit d’accès
+
+.red[2. ]Scraper les données sur le web
+
+.red[3. ]Rassembler des données à partir des informations disponibles
+
+.red[4. ]Faire appel à une foule de contributeurs
+
+.red[5. ]Concevoir des communs de données 
+]
+
+.pull-right[
+
+![](img/cimade.jpeg)
+Un exemple : la Cimade avec [À guichets fermés](https://aguichetsfermes.lacimade.org/)
+
+]
+
+
+---
+.red[**Qu'est ce qu'on fait ? Chantier 1 : obtenir les données**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On milite pour refonder le .red[droit d'accès] </h3>
+
+
+.pull-left[
+* De la CADA à la Haute Autorité pour la Transparence de la Vie Publique (HATVP) 
+
+* Créer un point central pour les demandes d’accès
+
+* Donner le pouvoir de sanctionner les administrations systématiquement récalcitrantes
+
+* Créer un « référé communication » pour accélérer le traitement des demandes
+]
+
+.pull-right[
+![](https://hot-objects.liiib.re/forum-madada-fr/original/1X/1fb2d7422bf286dabfc6c5bd523b9b81fbf2353c.jpeg)
+.footnote[](Source : [Donut Infolab](https://forum.madada.fr/t/demarrer-sur-ma-dada/859))]
+---
+.red[**Qu'est ce qu'on fait ? Chantier 1 : obtenir les données**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On crée de nouveaux mécanismes pour .red[obtenir les données] </h3>
+
+.pull-left[
+
+* Renforcer le cadre légal des données d’intérêt général
+
+* Créer des coopératives de données
+
+* Développer le crowdsourcing de données publiques
+]
+
+.pull-right[
+![](https://www.echosciences-paca.fr/uploads/a_d/image/attachment/1005479235/xl_miniature.jpg)
+
+.footnote[Source : [Echosciences PACA](https://www.echosciences-paca.fr/uploads/a_d/image/attachment/1005479235/xl_miniature.jpg)]
+]
+---
+
+.red[**Qu'est ce qu'on fait ? Chantier 2 : Améliorer la qualité et la fiabilité des données ouvertes**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> Développer la concertation entre .red[producteurs et réutilisateurs] </h3>
+
+.pull-left[
+### 
+
+* Créer un conseil national de la donnée
+
+* Étendre et renforcer le service public de la donnée
+
+* Créer des plans nationaux d’ouverture sectorielle
+]
+
+.pull-right[
+_Il existe des instances de concertation autour de la donnée mais dans des domaines sectoriels :_ 
+![](https://cnig.gouv.fr/IMG/png/cnig2022_geolocalise-petit-2.png)
+
+![](https://www.cnis.fr/wp-content/uploads/2017/12/CNIS-LOGO-300dpi-QUADRI-768x394.jpg)
+]
+---
+
+.red[**Qu'est ce qu'on fait ? Chantier 2 : Améliorer la qualité et la fiabilité des données ouvertes**] 
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On pérennise l’ouverture des données </h3>
+
+.pull-left[
+* Archiver les données publiques
+
+* Fédérer producteurs et réutilisateurs de données autour d’une organisation d’intérêt général
+
+* Relancer l’administrateur général des données
+]
+
+.pull-right[
+
+![](https://luigireggi.eu/wp-content/uploads/2018/06/Slide2.png)
+]
+
+---
+.red[**Qu'est ce qu'on fait ? Chantier 2 : Améliorer la qualité et la fiabilité des données ouvertes**] 
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On encourage à améliorer les données </h3>
+
+.pull-left[
+
+* Faire remonter la destination des données
+
+* Faire entrer l’ouverture des données dans les fiches de poste des agents
+
+* Montrer les résultats
+
+* Citer les agents
+]
+
+.pull-right[
+
+![](img/livredor.png)
+
+]
+---
+.red[**Qu'est ce qu'on fait ? Chantier 3 : Développer la culture des données**] 
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On place les données au cœur des politiques publiques </h3>
+
+.pull-left[
+
+* Généraliser les stratégies data
+
+* Co-construire des politiques publiques “nativement” avec les données
+
+* Co-construire les indicateurs des politiques publique
+
+* Développer le sourcing des réutilisateurs
+
+]
+
+.pull-right[
+![](https://open.datactivist.coop/images/products/fresque-opendata.webp)
+]
+
+---
+.red[**Qu'est ce qu'on fait ? Chantier 3 : Développer la culture des données**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On développe une culture critique des données les données au cœur des politiques publiques </h3>
+
+.pull-left[
+
+* Systématiser l’ouverture et usage des données dans les concertations
+
+* Développer les programmes qui apportent un regard critique sur les données
+
+* Développer la factualité
+] 
+
+.pull-right[
+
+![](https://www.francebleu.fr/s3/cruiser-production/2017/02/f21ba120-7982-495e-9b5a-445de5c9c21a/1200x680_carte_tae_support_cs_30_mars.webp)
+] 
+
+---
+.red[**Qu'est ce qu'on fait ? Chantier 3 : Développer la culture des données**]
+
+<h3 style="margin-top:0px;margin-bottom:0px"> On forme massivement aux données </h3>
+
+
+.pull-left[
+* Développer les Infolabs
+
+* Inviter les données ouvertes dans les médiathèques
+
+* Intégrer les données dans les programmes scolaires
+]
+
+.pull-right[
+![](img/dataliteracy-removebg.png)
+.footnote[
+[Venngage](https://venngage.com/blog/data-literacy/)
+]
+]
+
+---
+class:inverse
+
+### .red[Conclusion] : approfondir et étendre la démocratie
+
+.pull-left[
+- Un écosystème fragile
+
+- Approfondir la démocratie : d'un droit à un devoir de rendre des comptes
+
+- Étendre la démocratie : ouvrir la gouvernance des données, étendre l'ouverture aux algorithmes
+
+
+]
+
+--
+.pull-right[
+![](img/conclusion.png)
+"Changer les données" : des données pour transformer la réalité
+]
+---
+class:inverse,middle,center
+# Merci !
+
+Contact : [samuel@datactivist.coop](mailto:samuel@datactivist.coop)
+
+
