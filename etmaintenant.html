@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Les données de la démocratie</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Samuel Goëta, Datactivist/Sciences Po Aix" />
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
+    <meta name="description" content="Les donnees de la démocratie"/>
+    <meta name="github-repo" content="datactivist/donnees-democratie"/>
+    <meta name="twitter:description" content="Les donnees de la démocratie"/>
+    <meta name="twitter:url" content="https://datactivist.coop/donnees-democratie"/>
+    <meta name="twitter:image" content="https://cfeditions.com/donnees-democratie/ressources/couv_donnees-democratie_grand.jpg"/>
+    <meta name="twitter:image:alt" content="le logo de Datactivist"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:creator" content="@datactivi_st"/>
+    <meta name="twitter:site" content="@datactivi_st"/>
+    <meta property="og:description" content="Les donnees de la démocratie"/>
+    <meta property="og:url" content="https://datactivist.coop/donnees-democratie"/>
+    <meta property="og:image" content="https://cfeditions.com/donnees-democratie/ressources/couv_donnees-democratie_grand.jpg"/>
+    <meta property="og:image:alt" content="le logo de Datactivist"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:site_name" content="Datactivist"/>
+    <meta property="article:author" content="Datactivist"/>
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+layout: true
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+&lt;/style&gt;
+
+
+
+---
+class: inverse, center, middle
+background-image: url(https://cfeditions.com/donnees-democratie/ressources/couv_donnees-democratie_grand.jpg)
+
+
+## Les données de la démocratie
+### Un bilan critique de l'open data et des propositions d'action
+
+### Samuel Goëta
+
+#### Et maintenant, 28 novembre 2024
+
+
+---
+
+class: center, middle, inverse
+
+Ces slides en ligne : https://datactivist.coop/donnees-democratie/nec.html
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+---
+
+class:inverse
+
+### Au programme aujourd'hui
+
+
+.pull-left[
+![](https://the-public-domain-review.imgix.net/collections/engravings-from-a-french-ice-skating-manual-1813/9552537193_ba7d379b8e_o.jpg?w=600&amp;h=1200)
+]
+.pull-right[
+1. Comprendre les données
+
+2. Découvrir l'open data… et ses limites
+
+3. Comment agir avec et pour les données ?
+]
+
+.footnote[Découvrez les superbes ressources de la Public Domain Review : https://publicdomainreview.org/]
+
+---
+class:inverse, middle, center
+
+## 1. Comprendre les données
+
+---
+### Nuage de mots : à quoi vous pensez quand on parle de données ?
+
+&lt;iframe allowfullscreen frameborder="0" height="70%" mozallowfullscreen style="min-width: 500px; min-height: 355px" src="https://app.wooclap.com/events/SRGKGN/questions/67488037edf0d06d1fba33a7" width="100%"&gt;&lt;/iframe&gt;
+
+---
+### Mur de mots : à quoi vous pensez quand on parle de données ?
+
+&lt;iframe allowfullscreen frameborder="0" height="70%" mozallowfullscreen style="min-width: 500px; min-height: 300px" src="https://app.wooclap.com/events/SRGKGN/questions/67488068559c7fd79e2b60dc" width="100%" height="400px"&gt;&lt;/iframe&gt;
+
+---
+### Une définition .red[(trop longue)] des données
+
+.left-column[
+![](https://m.media-amazon.com/images/I/71u0SzYeeoL._SL1500_.jpg)
+
+]
+
+
+.right-column[
+&gt; Les données sont généralement comprises comme étant la **matière première** produite par la **synthèse du monde** en catégories, mesures et autres formes de représentation - nombres, caractères, symboles, images, sons, ondes électromagnétiques, bits - qui constituent les **éléments de base** à partir desquels l'information et le savoir sont créés.
+]
+
+---
+### Une définition .red[(trop longue)] des données
+
+.left-column[
+![](https://m.media-amazon.com/images/I/71u0SzYeeoL._SL1500_.jpg)
+### .red[Hein ??]
+]
+
+
+.right-column[
+
+.reduite[![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExb25pdW4wbDB4bjdqZ3hyb2dtdDBsdW02bXNjbmF0NmdscDRzYXoyYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PacQUjx7vwEBJLszzc/giphy.webp)]
+]
+---
+### .red[On la refait :] une définition des données
+
+.left-column[
+![](https://m.media-amazon.com/images/I/71u0SzYeeoL._SL1500_.jpg)
+
+]
+
+
+.right-column[
+&gt; Les données sont la **matière première** à partir desquels l'information et le savoir sont créés.
+
+&gt; Elles sont produites par la **synthèse du monde** en catégories, mesures et autres formes de représentation. 
+
+&gt; Elles constituent les **éléments de base** de l'information et du savoir. 
+]
+
+---
+### Plus simplement : .red[les données, c'est la base]
+
+.pull-left[
+**Du savoir :** 
+![](img/dikw.png)
+]
+--
+.pull-right[
+**De l'informatique :**
+![](img/data_the_economist.gif)
+]
+
+---
+.red[**Et dans le débat public ?**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Des chiffres pour faire tenir les choses &lt;/h3&gt;
+
+
+.pull-left[
+
+.center[
+
+![](https://samgoeta.github.io/strategic-data/1/img/desrosieres.png)
+]
+
+
+]
+.pull-right[
+Pour Alain Desrosières, dans _La Politique des grands nombres_ (p.27), la statistique vise à : 
+&gt; "**faire tenir les choses**, de façon à ce qu'elles constituent des représentations partagées, sur lesquelles des actions dotées de sens commun puissent porter.
+
+
+Les chiffres permettent de "**dire et faire société**" grâce à leur réputation de **factualité et d'objectivité**". 
+
+Ils fournissent des "**points d'appui**" à la réflexion et au débat.
+]
+---
+.red[**Il faut qu'on en parle**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; L'apétit vorace de données de l'industrie de l'IA &lt;/h3&gt;
+
+.pull-left[
+![](https://blogs.microsoft.com/wp-content/uploads/prod/sites/140/2021/10/kate_crawford_atlas_of_ai.jpg)
+]
+
+.pull-right[
+
+&gt; Les données sont devenues une force motrice dans le succès de l'intelligence artificielle et de son mythe. **Tout ce qui peut être capturé est acquis** [...] 
+
+&gt; Toutes les formes d'images, de textes, de sons et de vidéos ne sont que des données brutes pour les systèmes d'intelligence artificielle. 
+
+]
+
+---
+
+.red[**Il faut qu'on en parle**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; L'apétit vorace de données de l'industrie de l'IA &lt;/h3&gt;
+
+.left-column[
+![](https://blogs.microsoft.com/wp-content/uploads/prod/sites/140/2021/10/kate_crawford_atlas_of_ai.jpg)
+]
+
+.right-column[
+&gt; La métaphore des données comme "ressource naturelle" attendant d'être découverte est une astuce rhétorique bien établie, utilisée depuis des siècles par les puissances coloniales. […]
+
+&gt; La nouvelle ruée vers l'or de l'IA consiste à enfermer différents domaines de la connaissance, des sentiments et de l'action humaine - tous les types de données disponibles - tous pris dans une logique expansionniste de collecte sans fin. **Elle est devenue un pillage de l'espace public.**
+
+]
+
+---
+class:inverse, middle, center
+
+## 2. Découvrir l'open data… .red[et ses limites]
+
+---
+
+.red[**Au fait…**]
+--
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Vous utilisez déjà de l'open data &lt;/h3&gt;
+
+
+.pull-left[
+
+![](img/meilleursagents.png)
+![](img/yuka.png)
+
+]
+
+.pull-right[
+
+![](img/pokemon.png)
+![](img/plantnet.png)
+
+]
+
+---
+### Les racines multiples de l'open data
+.pull-left[
+
+![](img/magic-cube-cube-puzzle-play-54101-removebg-preview.png)
+]
+
+.pull-right[
+Loin d'être un phénomène récent, un mouvement aux multiples facettes :
+- la transparence et le droit d'accès
+- la liberté de l'information et le logiciel libre
+- le partage des données de la recherche
+- la modernisation des administrations
+- les industries de l'information
+- l'entrainement des modèles d'IA
+
+]
+
+---
+### Les grands principes de l'open data : .red[des données librement utilisables]
+
+![](img/spectre.png)
+
+.footnote[Source : Observatoire Data Publica]
+
+---
+### Les grands principes de l'open data : .red[des données dans leur plus grand niveau de précision]
+
+**Un exemple : .red[les données des accidents de la circulation]**
+
+.pull-left[
+![](img/base-mi.png)
+]
+--
+.pull-right[
+![](img/40m.png)
+]
+
+---
+### Les données ouvertes : une question de .red[démocratie]
+
+.red[Comment faire pour mettre les données ouvertes au service des citoyens  et de la démocratie ? L’open data est-il vraiment un contre-pouvoir ?]
+
+.pull-left[
+
+
+Open data : accès à la matière première de l’information et du savoir. Refaire les calculs et proposer de nouvelles interprétations.  
+
+—&gt; Un outil de la « contre-démocratie » : enrichit la démocratie, la conforte et fait système avec les institutions démocratiques
+
+—&gt; Un outil d’empowerment et d’émancipation
+]
+
+.pull-right.center[
+
+&lt;img src="img/couv_donnees-ouvertes_grand.jpg" width="70%" height="auto"/&gt;
+]
+
+
+---
+### L’ancrage .red[instable] de l’ouverture des données dans l’administration
+.pull-left[
+- Les premières initiatives locales : Rennes, PACA, Nantes, Paris… 
+
+- La création d'Etalab et le lancement de data.gouv.fr
+
+- La loi pour une République numérique
+
+- Vers une administration des données ?
+
+]
+
+.pull-right[
+![](img/republique-numerique.jpeg)
+]
+
+
+---
+class:inverse
+.red[**Pouce !**]
+--
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; On découvre .red[data.gouv.fr] &lt;/h3&gt;
+
+.pull-left[
+[![](img/dgf-partie1.png)](https://www.data.gouv.fr/fr/datasets/)
+]
+
+.pull-right[
+[![](img/dgf-partie2.png)](https://www.data.gouv.fr/fr/datasets/)
+]
+---
+### La pandémie de Covid-19, un .red[moment charnière]
+
+.pull-left[
+
+![](img/hackathoncovid.png)
+]
+
+.pull-right[
+- De premières ouvertures de données incitées par des initiatives citoyennes
+
+- Des données réutilisées massivement, une relance de la politique d'ouverture des données
+
+- L'émergence des médiateurs de données
+]
+---
+
+### Un renouvellement de la transparence .red[en demi-teinte]
+
+.pull-left[
+Les fondements juridiques instables de la transparence administrative
+
+L’open data : un carburant pour les « machines à scandale » ?
+
+Des données « inoffensives » ?
+
+Faut-il produire ses propres données ?
+]
+
+.pull-right[
+
+![](img/courdescomptes2.png)
+
+]
+---
+class:inverse
+### Un exemple : les Indices de Position Sociale des établissements scolaires
+
+.pull-left.center[
+![](img/lechenet.png)
+]
+
+.pull-right[![](img/lemonde-ips.png)]
+---
+class:inverse
+### Autre exemple : les notes de frais des maires
+
+.pull-left.center[
+![](img/joissains.png)
+]
+
+.pull-right[![](img/chicane.png)
+Lire à ce sujet : [chicane-lemag.fr/16](https://chicane-lemag.fr/16)
+]
+
+
+---
+class:inverse,middle,center
+
+# 3. Qu'est ce qu'on fait ? 
+# .red[Alternatives et propositions]
+---
+
+.red[**Que faire quand on n'a pas de données ?**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Stratégie 1 : recourir au .red[droit d'accès] &lt;/h3&gt;
+
+.pull-left[* Le fondement : la .red[Déclaration des Droits de l'Homme et du Citoyen de 1789] dans son article 15, "la Société a le droit de demander compte à tout Agent public de son administration." 
+
+* Le droit d'accès des citoyens à l'information publique émerge en **1978 avec la loi dite CADA** du nom de la Commission d'Accès aux Documents Administratifs. 
+
+* 3e pays au monde après la Suède en 1766 et les Etats-Unis en 1966 avec le Freedom of Information Act (FOIA) en 1966  à accorder un "droit de savoir".]
+
+.pull-right[
+![](https://datactivist.coop/metsem/ddhc2.png)
+]
+
+---
+### Les conditions d'exercice du droit d'accès
+
+.red[ Une définition très large des documents administratifs]
+&gt; Les documents administratifs peuvent revêtir de nombreuses formes (dossiers, rapports, études, comptes rendus, procès-verbaux, statistiques, directives, instructions, circulaires, codes sources, etc.) et adopter tout support (écrit, enregistrement sonore ou visuel, forme numérique ou informatique). 
+
+Le droit d'accès s'appplique aux documents administratifs produits dans le cadre d'une .red[mission de service public] ie :
+&gt; Une mission d'intérêt général sous le contrôle de l'administration et qui est dotée à cette fin de prérogatives de puissance publique est chargée de l'exécution d'un service public. 
+
+Il ne s’exerce que si l’administration a effectivement en sa possession le document demandé, que si le document est formellement **achevé**, qu'il existe et qu'il n'est pas **préparatoire à une décision administrative** en cours. 
+
+---
+### Madada.fr : faciliter l'exercice du droit d'accès
+
+![](https://datactivist.coop/metsem/madada.png)
+
+---
+.red[**Que faire quand on n'a pas de données ?**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Stratégie 2 : .red[Scraper] les données du web &lt;/h3&gt;
+
+Le scraping consiste à **extraire les données présentes sur des sites** web généralement dans des pages éparses. Il est courant qu’une organisation diffuse des données sur le web mais ne mette pas à disposition les données derrière ces sites.Or, pour beaucoup de sites publics, ces données auraient vocation à être librement réutilisables par toutes et tous. 
+
+Les outils de scraping permettent de **cibler les éléments à extraire sur les pages** (généralement par leurs propriétés dans le code source de la page ou dans la feuille de style), de lister toutes les pages concernées et d’extraire les éléments dans une base de données structurée.
+
+---
+### NosDeputes.fr : un projet citoyen né du scraping
+
+![](https://datactivist.coop/metsem/nosdeputes.png)
+
+
+---
+### Le Monde : un projet de scraping
+
+Le journaliste Alexandre Léchenet avait réalisé en 2012 une enquête sur les dépassements d’honoraires des médecins pour Le Monde en extrayant les données du site ameli-direct.fr qui indique les tarifs habituellement exercés par chaque praticien. 
+
+.center[![:largeur 70%](https://datactivist.coop/metsem/lechenet.png)]
+
+---
+### Cimade : à guichets fermés
+la Cimade, une association de défense des réfugiés et du droit d’asile, a mis en place le site « A guichets fermés » pour dénoncer l’attente pour les formalités d’immigration devenue « un moyen de domination des personnes étrangères par la préfecture[1]. » Pour produire le site «[ A guichets fermés ](https://www.lacimade.org/presse/a-guichets-fermes-les-personnes-etrangeres-mises-a-distance-des-prefectures/)», l’association a développé des robots qui se rendent toutes les deux heures sur les sites de prise de rendez-vous en préfecture et extraient le délai d’attente pour les principales formalités. 
+
+![:largeur 60%](https://datactivist.coop/metsem/cimade.png)
+
+---
+.red[**Que faire quand on n'a pas de données ?**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Stratégie 3 : constituer des données à partir des .red[informations disponibles] &lt;/h3&gt;
+
+La troisième stratégie consiste à rassembler des informations disponibles mais éparses dans une base de données.
+
+Les documents publiés par les administrations comportent généralement des graphiques, des tableaux ou des indicateurs qui, pris isolément, ne permettent pas de refaire les calculs et de produire de nouvelles analyses.
+
+--
+
+&lt;img style="float: right;margin:10px;width:400px" src="https://datactivist.coop/metsem/spiil.png"&gt;Par exemple, le SPIIL a constitué une base de données estimant le montant de chacun des dispositifs d’aide à partir de sources très diverses : rapports annuels de performance établis par Bercy, rapport de la Cour des Comptes, budget de l’Etat, questions au gouvernement ou encore des estimations publiées par le SPIIL…
+
+---
+### SPIIL : panorama des aides à la presse
+
+Avec ces données, nous avons conçu des visualisations pour illustrer les messages portés par le SPIIL dans l’analyse de ces données 
+
+![](https://datactivist.coop/metsem/spiilviz.png)
+
+---
+### Transparency France : cartographie de la corruption
+
+Un bénévole de Transparency France, surveille les chroniques judiciaires de la presse locale en France pour détecter les affaires de corruption et met les nouvelles affaires en base de données. Le site [visualiserlacorruption.fr](visualiserlacorruption.fr) présente plus de 900 condamnations pour renforcer le plaidoyer de l’association sur le manque de moyens de la justice en France pour lutter contre la corruption. 
+.center[![:largeur 70%](https://datactivist.coop/metsem/cartocorru.png)]
+
+---
+.red[**Que faire quand on n'a pas de données ?**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Stratégie 4 : faire appel à une .red[foule de contributeurs] &lt;/h3&gt;
+
+On désigne couramment sous le terme de crowdsourcing l’acte de déléguer des actions à un grand nombre d’individus sous la forme d’un appel ouvert à la contribution. 
+
+Le crowdsourcing peut aussi servir à des projets d’intérêt général afin de constituer des bases de données ouvertes. Dans l’ensemble des exemples qui suivent, les contributeurs se sont mobilisés pour collecter des données dans des projets à but non lucratif, souvent afin de servir une cause militante ou pour passion.
+
+---
+### Greenpeace : une campagne sur les cantines
+
+Entre septembre 2017 et février 2018, près de 8000 personnes ont collecté des données précieuses sur les menus de cantines des écoles primaires publiques en France : nombre de repas végétariens proposés, fréquence des options végétariennes, origine bio de la viande, intitulés des menus… 
+
+
+Grâce à cette grande enquête, Greenpeace a recueilli plus de 12 000 contributions couvrant plus de 3 200 villes et au moins 60 % de la population des écoliers. Bien qu’elles ne couvrent pas tout le territoire, ces données ont permis de montrer que 69 % des enfants sont obligés de manger de la viande ou du poisson presque tous les jours. 
+
+---
+### Greenpeace : une campagne sur les cantines
+
+Pour en savoir plus : lire [cet article](https://medium.com/datactivist/greenpeace-retour-sur-une-campagne-open-data-pour-rep%C3%A9rer-la-viande-dans-les-cantines-5c12859f94ba) sur notre campagne
+.pull-left[
+#### Outil de contribution : 
+
+![](https://datactivist.coop/metsem/gpcontrib.png)
+]
+
+.pull-right[
+#### Site de plaidoyer et de mobilisation 
+![](https://datactivist.coop/metsem/greenpeace.png)
+]
+
+---
+### Regards Citoyens : numériser les déclarations
+
+En 2014, les déclarations remplies des 577 députés et 348 sénateurs comportant chacune 12 parties, soit un total de plus de 11 000 extraits de formulaires manuscrits, ont été numérisées en une semaine par près de 8000 contributeurs. 
+
+.center[
+![](https://datactivist.coop/metsem/declaint.png)
+]
+
+---
+.red[**Qu'est ce qu'on fait ? Chantier 1 : obtenir les données**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; On milite pour refonder le .red[droit d'accès] &lt;/h3&gt;
+
+
+.pull-left[
+* De la CADA à la Haute Autorité pour la Transparence de la Vie Publique (HATVP) 
+
+* Créer un point central pour les demandes d’accès
+
+* Donner le pouvoir de sanctionner les administrations systématiquement récalcitrantes
+
+* Créer un « référé communication » pour accélérer le traitement des demandes
+]
+
+.pull-right[
+![](https://hot-objects.liiib.re/forum-madada-fr/original/1X/1fb2d7422bf286dabfc6c5bd523b9b81fbf2353c.jpeg)
+.footnote[](Source : [Donut Infolab](https://forum.madada.fr/t/demarrer-sur-ma-dada/859))]
+---
+.red[**Qu'est ce qu'on fait ? Chantier 1 : obtenir les données**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; On crée de nouveaux mécanismes pour .red[obtenir les données] &lt;/h3&gt;
+
+.pull-left[
+
+* Renforcer le cadre légal des données d’intérêt général
+
+* Créer des coopératives de données
+
+* Développer le crowdsourcing de données publiques
+]
+
+.pull-right[
+![](img/Venn open data.png)
+
+.footnote[Source : [Echosciences PACA](https://www.echosciences-paca.fr/uploads/a_d/image/attachment/1005479235/xl_miniature.jpg)]
+]
+---
+
+.red[**Qu'est ce qu'on fait ? Chantier 2 : Améliorer la qualité et la fiabilité des données ouvertes**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; Développer la concertation entre .red[producteurs et réutilisateurs] &lt;/h3&gt;
+
+.pull-left[
+### 
+
+* Créer un conseil national de la donnée
+
+* Étendre et renforcer le service public de la donnée
+
+* Créer des plans nationaux d’ouverture sectorielle
+]
+
+.pull-right[
+_Il existe des instances de concertation autour de la donnée mais dans des domaines sectoriels :_ 
+![](https://cnig.gouv.fr/IMG/png/cnig2022_geolocalise-petit-2.png)
+
+![](https://www.cnis.fr/wp-content/uploads/2017/12/CNIS-LOGO-300dpi-QUADRI-768x394.jpg)
+]
+
+
+---
+.red[**Qu'est ce qu'on fait ? Chantier 3 : Développer la culture des données**]
+
+&lt;h3 style="margin-top:0px;margin-bottom:0px"&gt; On forme massivement aux données &lt;/h3&gt;
+
+
+.pull-left[
+* Développer les Infolabs
+
+* Inviter les données ouvertes dans les médiathèques
+
+* Intégrer les données dans les programmes scolaires
+]
+
+.pull-right[
+![](img/dataliteracy-removebg.png)
+.footnote[
+[Venngage](https://venngage.com/blog/data-literacy/)
+]
+]
+
+
+---
+class:inverse
+
+### .red[Conclusion] : approfondir et étendre la démocratie
+
+.pull-left[
+- Un écosystème fragile
+
+- Approfondir la démocratie : d'un droit à un devoir de rendre des comptes
+
+- Étendre la démocratie : ouvrir la gouvernance des données, étendre l'ouverture aux algorithmes
+
+
+]
+--
+.pull-right[
+![](img/conclusion.png)
+"Changer les données" : des données pour transformer la réalité
+]
+---
+class:inverse,middle,center
+
+
+# Merci !
+
+Contact : [samuel@datactivist.coop](mailto:samuel@datactivist.coop)
+
+
+.pull-left[
+Découvrir et commander (🙏) le livre : [https://cfeditions.com/donnees-democratie/](https://cfeditions.com/donnees-democratie/)
+
+]
+
+.pull-right[
+&lt;img src="img/couv_donnees-ouvertes_grand.jpg" style="width: 35%"/&gt;
+]
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="matomo.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
